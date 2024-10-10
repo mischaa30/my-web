@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERI</title>
+    <style>
+        .db {
+            background-color: #3b5998; 
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .db a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: large;
+            padding: 10px 15px;
+            margin: 0 5px;
+            transition: background-color 0.3s, transform 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        .db a:hover {
+            background-color: #4e69a2;
+            color: #fff; 
+            transform: scale(1.05);
+        }    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+            color: #4e69a2;
+        }
+        h2{
+            margin: 20px;
+            color: #4e69a2;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+            gap: 10px; 
+            padding: 20px;
+        }
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            padding: 10px; 
+            background: white; 
+            text-align: center; 
+        }
+        .gallery-item img {
+            max-width: 100%; 
+            height: auto; 
+            object-fit: contain; 
+            transition: transform 0.3s ease;
+            border-radius: 5px; 
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .description {
+            margin-top: 5px; 
+            color: #555; 
+            font-size: 14px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="db">
+        <a href="home.html">HOME</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="jadwal.html">JADWAL</a>
+        <a href="galeri.html">GALERI</a>
+    </div>
+    <h1>My Galeri</h1>
+    <a href="https://www.instagram.com/azizahrachl/">
+        <h2>@ MY INSTAGRAM</h2>
+    </a>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="g1.jpg" alt="Image 1">
+            <p class="description">Pulang Pagi</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g2.jpg" alt="Image 2">
+            <p class="description">Pulang Pagi</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g3.jpg" alt="Image 3">
+            <p class="description">Pantai</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g4.jpg" alt="Image 4">
+            <p class="description">Sumpah Pemuda JHS</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g5.jpg" alt="Image 5">
+            <p class="description">Bukber Terakhir JHS</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g6.jpg" alt="Image 6">
+            <p class="description">Graduate</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g7.jpg" alt="Image 7">
+            <p class="description">Kembang Api</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g8.jpg" alt="Image 8">
+            <p class="description">Healing/Nugas</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g9.jpg" alt="Image 9">
+            <p class="description">Hari Batik Sejurusan RPL</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g10.jpg" alt="Image 10">
+            <p class="description">Healing/Nugas</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g11.jpg" alt="Image 9">
+            <p class="description">Mamom</p>
+        </div>
+        <div class="gallery-item">
+            <img src="g12.jpg" alt="Image 10">
+            <p class="description">Seperempat Mood</p>
+        </div>
+    </div>
+</body>
+</html>
